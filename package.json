@@ -3,7 +3,10 @@
   "version": "0.0.1",
   "description": "Recommendation tool for papers published on arxiv.org",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev:interface": "cd apps/interface && pnpm dev",
+    "dev:backend": "cd apps/backend && pnpm dev",
+    "dev": "pnpm dev:interface"
   },
   "keywords": [],
   "author": "moons-14 <moons@moons14.com>",
