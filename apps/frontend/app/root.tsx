@@ -8,6 +8,8 @@ import {
 } from "@remix-run/react";
 
 import "./tailwind.css";
+import { Header } from "./components/layout/header";
+import { Footer } from "./components/layout/footer";
 
 export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -20,6 +22,11 @@ export const links: LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
+  {
+    rel: "icon",
+    href: "/favicon.svg",
+    type: "image/svg+xml"
+  }
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {
@@ -31,8 +38,12 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body>
-        {children}
+      <body className="flex flex-col min-h-screen">
+        <Header />
+        <div className="flex-1">
+          {children}
+        </div>
+        <Footer />
         <ScrollRestoration />
         <Scripts />
       </body>
