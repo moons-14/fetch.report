@@ -7,5 +7,9 @@
   },
   "keywords": [],
   "author": "moons-14 <moons@moons14.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "@biomejs/biome": "1.9.3",
+    "typescript": "^5.6.2"
+  }
 }
