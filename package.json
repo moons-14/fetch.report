@@ -1,0 +1,11 @@
+{
+  "name": "fetch.report",
+  "version": "0.0.1",
+  "description": "Recommendation tool for papers published on arxiv.org",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "moons-14 <moons@moons14.com>",
+  "license": "MIT"
+}
