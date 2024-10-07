@@ -11,6 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "arxiv-client": "^0.0.6",
     "cheerio": "^1.0.0",
     "tsx": "^4.19.1"
   }
